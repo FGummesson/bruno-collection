@@ -1,0 +1,32 @@
+opencollection: 1.0.0
+
+info:
+  name: sts2-adapter
+
+request:
+  auth:
+    type: apikey
+    key: Authorization
+    value: "{{sts2-adapter-secret}}"
+    placement: header
+  variables:
+    - name: sts2-adapter-base-url
+      value: ""
+    - name: sts2-adapter-client
+      value: ""
+    - name: sts2-adapter-locRef
+      value: ""
+    - name: sts2-adapter-rvcRef
+      value: ""
+    - name: sts2-adapter-secret
+      value: ""
+
+docs:
+  content: Converted from the HTTPie Desktop export in httpie-collection-sts2-adapter.json. Set the sts2-adapter-* variables in your environment.
+  type: text/markdown
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git
